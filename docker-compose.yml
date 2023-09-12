@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  streamlit-app:
+    build: .
+    #image: your_image_name:latest
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
