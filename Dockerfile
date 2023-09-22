@@ -26,4 +26,4 @@ RUN wget -P /app/models/ https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/re
 EXPOSE 8501
 
 # Run streamlit.py when the container launches
-# CMD ["streamlit", "run", "src/app.py", "--server.port=8501"]
+CMD ["streamlit", "run", "src/app.py", "--server.port=8501"]
