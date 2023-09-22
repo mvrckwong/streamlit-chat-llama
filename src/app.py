@@ -112,7 +112,7 @@ def sidebar_settings() -> None:
       
 
 def select_llm(model, temperature:float=0.50, max_length:int=2000, top_p:int=1):
-      model_file = LLMS[model].value
+      model_file = "llama-2-7b-chat.ggmlv3.q2_K.bin"
       
       callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
       return LlamaCpp(
