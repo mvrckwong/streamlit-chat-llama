@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
 
 # Create the models directory
-RUN mkdir /models
+#RUN mkdir /models
 
 # Download the file into the models directory
 RUN wget -P /app/models/ https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/resolve/main/llama-2-7b-chat.ggmlv3.q2_K.bin
