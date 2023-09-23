@@ -27,9 +27,15 @@ from enums import LLMS
 #                                           #
 #############################################
 
-DIR_APP = Path(__file__).parent
-DIR_PROJ = DIR_APP.parent
-DIR_MODELS = DIR_PROJ / "models"
+# DIR_APP = Path(__file__).parent
+# DIR_PROJ = DIR_APP.parent
+# DIR_MODELS = DIR_PROJ / "models"
+
+
+DIR_SRC = Path.cwd()
+DIR_APP = DIR_SRC.parent
+DIR_MODELS = DIR_APP / "models"
+
 
 TITLE = "Large-language Model Chatbot"
 
